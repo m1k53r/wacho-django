@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>School</title>
+</head>
+<body>
+  <main>
+    <h1>{{ welcome_message }}</h1>
+    <h2>ZSL</h2>
+    <p>Plusy</p>
+    <ul>
+      <li>Szybkie Django</li>
+      <li>Mocny Python</li>
+    </ul>
+    <p>Minusy</p>
+    <ul>
+      <li>Pada na lepe</li>
+    </ul>
+    Przedmioty
+    <ul>
+      {% for lesson in lessons %}
+      <li>{{lesson.name}} ({{ lesson.lecturer }})</li>
+      {% endfor %}
+    </ul>
+  </main>
+</body>
+</html>
